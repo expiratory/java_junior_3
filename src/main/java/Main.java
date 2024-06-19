@@ -24,6 +24,8 @@ public class Main {
         PersonRepository repository = new PersonRepository(em);
 
         repository.addPerson(new Person("John Doe", 30));
+        repository.addPerson(new Person("Mary Jane", 33));
+        repository.addPerson(new Person("Sam Smith", 35));
 
         repository.updatePerson(1L, "Jane Doe", 25);
 
